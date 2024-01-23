@@ -78,7 +78,19 @@
       "type": "bundled"
     },
     {
+      "name": "@types/aws-lambda",
+      "type": "bundled"
+    },
+    {
+      "name": "@types/node",
+      "type": "bundled"
+    },
+    {
       "name": "dotenv",
+      "type": "bundled"
+    },
+    {
+      "name": "esbuild",
       "type": "bundled"
     },
     {
@@ -104,7 +116,19 @@
       "type": "runtime"
     },
     {
+      "name": "@types/aws-lambda",
+      "type": "runtime"
+    },
+    {
+      "name": "@types/node",
+      "type": "runtime"
+    },
+    {
       "name": "dotenv",
+      "type": "runtime"
+    },
+    {
+      "name": "esbuild",
       "type": "runtime"
     },
     {

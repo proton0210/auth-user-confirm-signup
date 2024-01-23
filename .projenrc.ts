@@ -18,6 +18,9 @@ const project = new awscdk.AwsCdkConstructLibrary({
     "@aws-sdk/util-dynamodb",
     "path",
     "dotenv",
+    "esbuild",
+    "@types/aws-lambda",
+    "@types/node",
   ],
   devDeps: ["@types/aws-lambda", "esbuild", "@types/node"],
   bundledDeps: [
@@ -25,6 +28,9 @@ const project = new awscdk.AwsCdkConstructLibrary({
     "@aws-sdk/util-dynamodb",
     "path",
     "dotenv",
+    "esbuild",
+    "@types/aws-lambda",
+    "@types/node",
   ],
 });
 const common_exclude = ["cdk.out", "cdk.context.json", ".env"];

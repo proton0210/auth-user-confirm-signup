@@ -61,7 +61,7 @@ exports.handler = async function (
     await client.send(new PutItemCommand(params));
   } catch (error) {
     // Throw an error if there is a problem with the DynamoDB operation
-    throw new Error(error);
+    throw new Error(error as any);
     console.log(error);
   }
 

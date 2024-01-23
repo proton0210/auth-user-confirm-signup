@@ -62,6 +62,12 @@
     "dotenv": "^16.3.2",
     "path": "^0.12.7"
   },
+  "bundledDependencies": [
+    "@aws-sdk/client-dynamodb",
+    "@aws-sdk/util-dynamodb",
+    "dotenv",
+    "path"
+  ],
   "keywords": [
     "cdk"
   ],

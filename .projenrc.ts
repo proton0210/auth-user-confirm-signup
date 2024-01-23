@@ -19,6 +19,12 @@ const project = new awscdk.AwsCdkConstructLibrary({
     "dotenv",
   ],
   devDeps: ["@types/aws-lambda", "esbuild", "@types/node"],
+  bundledDeps: [
+    "@aws-sdk/client-dynamodb",
+    "@aws-sdk/util-dynamodb",
+    "path",
+    "dotenv",
+  ],
 
   // deps: [],                /* Runtime dependencies of this module. */
   // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */

@@ -70,6 +70,22 @@
       "type": "build"
     },
     {
+      "name": "@aws-sdk/client-dynamodb",
+      "type": "bundled"
+    },
+    {
+      "name": "@aws-sdk/util-dynamodb",
+      "type": "bundled"
+    },
+    {
+      "name": "dotenv",
+      "type": "bundled"
+    },
+    {
+      "name": "path",
+      "type": "bundled"
+    },
+    {
       "name": "aws-cdk-lib",
       "version": "^2.1.0",
       "type": "peer"

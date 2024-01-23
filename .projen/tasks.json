@@ -250,13 +250,13 @@
       },
       "steps": [
         {
-          "exec": "npx npm-check-updates@16 --upgrade --target=minor --peer --dep=dev,peer,prod,optional --filter=@types/aws-lambda,@types/jest,@types/node,esbuild,jest,jest-junit,jsii-diff,jsii-docgen,jsii-pacmak,projen,standard-version,ts-jest,ts-node,typescript,aws-cdk-lib,constructs,@aws-sdk/client-dynamodb,@aws-sdk/util-dynamodb,dotenv,path"
+          "exec": "npx npm-check-updates@16 --upgrade --target=minor --peer --dep=dev,peer,prod,optional --filter=@types/aws-lambda,@types/jest,@types/node,esbuild,jest,jest-junit,jsii-diff,jsii-docgen,jsii-pacmak,projen,standard-version,ts-jest,ts-node,typescript,@aws-sdk/client-dynamodb,@aws-sdk/util-dynamodb,dotenv,path,aws-cdk-lib,constructs"
         },
         {
           "exec": "yarn install --check-files"
         },
         {
-          "exec": "yarn upgrade @types/aws-lambda @types/jest @types/node esbuild jest jest-junit jsii-diff jsii-docgen jsii-pacmak projen standard-version ts-jest ts-node typescript aws-cdk-lib constructs @aws-sdk/client-dynamodb @aws-sdk/util-dynamodb dotenv path"
+          "exec": "yarn upgrade @types/aws-lambda @types/jest @types/node esbuild jest jest-junit jsii-diff jsii-docgen jsii-pacmak projen standard-version ts-jest ts-node typescript @aws-sdk/client-dynamodb @aws-sdk/util-dynamodb dotenv path aws-cdk-lib constructs"
         },
         {
           "exec": "npx projen"

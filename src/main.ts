@@ -43,7 +43,7 @@ export class AuthConfirmStack extends cdk.Stack {
     });
 
     // Create Cognito construct with Lambda function as a trigger
-    const cognitoConstruct = new CognitoConstruct(this, "CognitoConstruct", {
+    new CognitoConstruct(this, "CognitoConstruct", {
       addUserPostConfirmation: lambdaConstruct.addUserToTableFunc,
     });
   }

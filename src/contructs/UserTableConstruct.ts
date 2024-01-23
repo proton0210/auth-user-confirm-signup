@@ -1,10 +1,5 @@
 import { CfnOutput, RemovalPolicy } from "aws-cdk-lib";
-import {
-  AttributeType,
-  ITable,
-  Table,
-  BillingMode,
-} from "aws-cdk-lib/aws-dynamodb";
+import { AttributeType, Table, BillingMode } from "aws-cdk-lib/aws-dynamodb";
 import { Construct } from "constructs";
 /**
  * Interface representing the properties for the UserTableConstruct.

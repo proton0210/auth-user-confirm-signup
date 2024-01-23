@@ -48,7 +48,7 @@ export class LambdaConstruct extends Construct {
   private addUserToUsersTable(props: LambdaConstructProps): NodejsFunction {
     const func = new NodejsFunction(this, "adduserFunc", {
       functionName: "addUserFunc",
-      runtime: Runtime.NODEJS_14_X,
+      runtime: Runtime.NODEJS_20_X,
       handler: "handler",
       entry: path.join(
         __dirname,

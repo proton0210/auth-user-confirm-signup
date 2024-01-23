@@ -2,7 +2,7 @@
   "name": "auth-user-confirm-signup",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vidit0210/auth-user-confirm-signup.git"
+    "url": "https://github.com/proton0210/auth-user-confirm-signup.git"
   },
   "scripts": {
     "build": "npx projen build",
@@ -36,16 +36,16 @@
     "@types/aws-lambda": "^8.10.131",
     "@types/jest": "^29.5.11",
     "@types/node": "^18",
-    "aws-cdk-lib": "2.1.0",
+    "aws-cdk-lib": "2.122.0",
     "constructs": "10.0.5",
     "esbuild": "^0.19.11",
     "jest": "^29.7.0",
     "jest-junit": "^15",
-    "jsii": "~5.0.0",
+    "jsii": "~5.3.0",
     "jsii-diff": "^1.94.0",
     "jsii-docgen": "^10.3.9",
     "jsii-pacmak": "^1.94.0",
-    "jsii-rosetta": "~5.0.0",
+    "jsii-rosetta": "~5.3.0",
     "projen": "^0.79.3",
     "standard-version": "^9",
     "ts-jest": "^29.1.2",
@@ -53,7 +53,7 @@
     "typescript": "^5.3.3"
   },
   "peerDependencies": {
-    "aws-cdk-lib": "^2.1.0",
+    "aws-cdk-lib": "^2.122.0",
     "constructs": "^10.0.5"
   },
   "dependencies": {

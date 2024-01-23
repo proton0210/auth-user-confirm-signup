@@ -1,5 +1,6 @@
-const { DynamoDBClient, PutItemCommand } = require("@aws-sdk/client-dynamodb");
-const { marshall } = require("@aws-sdk/util-dynamodb");
+import { PostConfirmationConfirmSignUpTriggerEvent } from "aws-lambda";
+import { DynamoDBClient, PutItemCommand } from "@aws-sdk/client-dynamodb";
+import { marshall } from "@aws-sdk/util-dynamodb";
 
 /**
  * Environment variable representing the AWS region.
@@ -25,7 +26,7 @@ if (!TABLE_NAME) {
  * DynamoDB client for interacting with the DynamoDB service.
  */
 const client = new DynamoDBClient({
-  region: REGION,
+  region: REGION as string,
 });
 
 /**
@@ -33,7 +34,9 @@ const client = new DynamoDBClient({
  * @param event The Post Confirmation Confirm Sign-Up trigger event.
  * @returns A Promise with the result of the function execution.
  */
-exports.handler = async function (event) {
+exports.handler = async function (
+  event: PostConfirmationConfirmSignUpTriggerEvent
+): Promise<string> {
   // Get the current date and time in ISO format
   const date = new Date();
   const isoDate = date.toISOString();
@@ -42,7 +45,7 @@ exports.handler = async function (event) {
 
   // Customize parameters for DynamoDB based on the event
   const params = {
-    TableName: TABLE_NAME,
+    TableName: TABLE_NAME as string,
     Item: marshall({
       UserID: event.request.userAttributes.sub,
       Email: event.request.userAttributes.email,
@@ -57,7 +60,7 @@ exports.handler = async function (event) {
     await client.send(new PutItemCommand(params));
   } catch (error) {
     // Throw an error if there is a problem with the DynamoDB operation
-    throw new Error(error);
+    throw new Error(error as any);
     console.log(error);
   }
 

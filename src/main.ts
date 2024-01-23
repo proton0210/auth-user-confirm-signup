@@ -161,7 +161,7 @@ export class LambdaConstruct extends Construct {
       handler: "handler",
       entry: path.join(
         __dirname,
-        "./functions/PostConfirmSignUpFunction/index.ts"
+        "./functions/PostConfirmSignUpFunction/index.js"
       ),
       environment: {
         TABLE_NAME: props.usersTable.tableName as string,

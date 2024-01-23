@@ -13,7 +13,6 @@
     "default": "npx projen default",
     "docgen": "npx projen docgen",
     "eject": "npx projen eject",
-    "eslint": "npx projen eslint",
     "package": "npx projen package",
     "package-all": "npx projen package-all",
     "package:js": "npx projen package:js",
@@ -34,15 +33,12 @@
     "organization": false
   },
   "devDependencies": {
+    "@types/aws-lambda": "^8.10.131",
     "@types/jest": "^29.5.11",
     "@types/node": "^18",
-    "@typescript-eslint/eslint-plugin": "^6",
-    "@typescript-eslint/parser": "^6",
     "aws-cdk-lib": "2.1.0",
     "constructs": "10.0.5",
-    "eslint": "^8",
-    "eslint-import-resolver-typescript": "^3.6.1",
-    "eslint-plugin-import": "^2.29.1",
+    "esbuild": "^0.19.11",
     "jest": "^29.7.0",
     "jest-junit": "^15",
     "jsii": "~5.0.0",
@@ -59,6 +55,12 @@
   "peerDependencies": {
     "aws-cdk-lib": "^2.1.0",
     "constructs": "^10.0.5"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.496.0",
+    "@aws-sdk/util-dynamodb": "^3.496.0",
+    "dotenv": "^16.3.2",
+    "path": "^0.12.7"
   },
   "keywords": [
     "cdk"

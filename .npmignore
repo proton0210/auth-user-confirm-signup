@@ -6,7 +6,6 @@ junit.xml
 permissions-backup.acl
 /dist/changelog.md
 /dist/version.txt
-/.mergify.yml
 /test/
 /tsconfig.dev.json
 /src/
@@ -20,7 +19,9 @@ dist
 /.idea/
 /.projenrc.js
 tsconfig.tsbuildinfo
-/.eslintrc.json
 !.jsii
+cdk.out
+cdk.context.json
+.env
 /.gitattributes
 /.projenrc.ts

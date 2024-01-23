@@ -13,6 +13,8 @@ const app = new App();
  * AWS CDK stack for setting up authentication confirmation resources.
  * The stack uses environment variables loaded using `dotenv.config()`.
  */
-new AuthConfirmStack(app, "AuthConfirmStack", {
+const authStack = new AuthConfirmStack(app, "AuthConfirmStack", {
   region: process.env.REGION as string,
 });
+
+export default authStack;

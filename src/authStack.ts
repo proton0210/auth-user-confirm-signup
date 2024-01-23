@@ -5,11 +5,11 @@ import { CognitoConstruct, LambdaConstruct, UserTableConstruct } from "./main";
 /**
  * Interface representing the properties for the AuthConfirmStack.
  */
-interface AuthConfirmStackProps extends cdk.StackProps {
+export interface AuthConfirmStackProps extends cdk.StackProps {
   /**
    * The AWS region in which the resources will be deployed.
    */
-  region: string;
+  readonly region: string;
 }
 
 /**

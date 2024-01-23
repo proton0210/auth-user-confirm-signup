@@ -40,7 +40,6 @@ exports.handler = async function (
   // Get the current date and time in ISO format
   const date = new Date();
   const isoDate = date.toISOString();
-
   // Log the incoming event for debugging purposes
   console.log("EVENT: \n" + JSON.stringify(event, null, 2));
 

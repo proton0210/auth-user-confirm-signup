@@ -1,8 +1,29 @@
-# Architecture and Use case!
 
 Easily set Auth in your AWS app with this construct
+# Authentication Setup Details
+
+The authentication setup involves:
+
+## AWS Cognito User Pool and Client:
+
+- Creation of an AWS Cognito user pool and client for user authentication.
+- Utilization of a Lambda function as a post-confirmation trigger.
+
+## Lambda Function for Email Verification Logic:
+
+- Implementation of a Lambda function that executes logic after the user verifies their email.
+
+## DynamoDB User Table:
+
+- Creation of a DynamoDB user table to store user data.
+- Use of the UserID as the partition key, derived from the Cognito user sub.
+
+Feel free to customize and expand upon this setup based on your specific project requirements.
 
 Install esbuild in your cdk project : `npm i esbuild`
+
+# Architecture and Use case!
+
 
 ![architecture](https://github.com/proton0210/auth-user-confirm-signup/assets/80155713/9fa0cb0a-4919-48e4-a84e-7ea43553a22c)
 

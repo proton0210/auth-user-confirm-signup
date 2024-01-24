@@ -2,6 +2,8 @@
 
 Easily set Auth in your AWS app with this construct
 
+Install esbuild in your cdk project : `npm i esbuild`
+
 ![architecture](https://github.com/proton0210/auth-user-confirm-signup/assets/80155713/9fa0cb0a-4919-48e4-a84e-7ea43553a22c)
 
 ![usecase1](https://github.com/proton0210/auth-user-confirm-signup/assets/80155713/2ebda23e-373f-426d-9a88-ea249a6d96f6)
